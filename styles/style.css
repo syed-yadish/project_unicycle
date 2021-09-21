@@ -2,83 +2,160 @@ body {
   margin: 0;
   background-color: #3433e8;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
   font-family: poppins;
 }
 
 main {
   height: 200vh;
+  width: 100%;
   margin: 0px;
 }
 
 .nav {
-  display: inline;
-  position: absolute;
+  display: inline-flex;
+  position: relative;
   width: 100%;
   height: 80px;
   left: 0px;
-  top: 0px;
   background-color: whitesmoke;
   z-index: 1;
   position: fixed;
+  flex-wrap: wrap;
 }
 .logo {
   width: 120px;
   height: 70px;
-  left: 80px;
+  left: 10px;
   top: 5px;
   position: absolute;
 }
 li {
-  display: inline;
+  display: inline-flex;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
 }
-a {
-  background: linear-gradient(to right, #3433e8, skyblue);
-  border: none;
-  border-radius: 20px;
-  transition: 0.5s ease-in-out;
-  text-decoration: none;
-  color: aliceblue;
-  width: 25%;
-  padding: 10px;
-  margin: 40px 0;
-}
-li a:hover {
-  border: 5px blue solid;
-  left: 40%;
-  right: 20%;
-  top: 10px;
-}
+
 .navli {
-  position: absolute;
-  height: 2px;
-  left: 40%;
-  right: 20%;
-  top: 10px;
+  position: relative;
+  width: 400px;
+  height: 6px;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  line-height: 28px;
-  color: #333333;
+  columns: #333333;
+  left: 25%;
+}
+.home {
+  border-radius: 3rem;
+  border: 14px solid whitesmoke;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  transition: filter 0.4s ease-in-out;
+}
+.home:hover {
+  border: 12px solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: blue;
+  color: white;
+  content: "";
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+.home:hover::after {
+  transform: translate(0, 0);
+}
+.about {
+  border-radius: 3rem;
+  border: 14px solid whitesmoke;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  transition: filter 0.4s ease-in-out;
+}
+.about:hover {
+  border: 12px solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: blue;
+  color: white;
+  content: "";
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+.about:hover::after {
+  transform: translate(0, 0);
+}
+.gallery {
+  border-radius: 3rem;
+  border: 14px solid whitesmoke;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  transition: filter 0.4s ease-in-out;
+}
+.gallery:hover {
+  border: 12px solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: blue;
+  color: white;
+  content: "";
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+.gallery:hover::after {
+  transform: translate(0, 0);
+}
+.contact {
+  border-radius: 3rem;
+  border: 14px solid whitesmoke;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  transition: filter 0.4s ease-in-out;
+}
+.contact:hover {
+  border: 12px solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: blue;
+  color: white;
+  content: "";
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+.contact:hover::after {
+  transform: translate(0, 0);
 }
 .name {
-  width: 300px;
-  height: 50px;
-  left: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 30px;
+  left: 140px;
   top: -4px;
-  position: absolute;
+  position: relative;
   color: blue;
-  display: block;
-  font-weight: 800;
+  font-weight: 600;
   font-size: xx-large;
   font-family: "Poppins", sans-serif;
   animation-name: test;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 @keyframes test {
   0% {
@@ -97,60 +174,65 @@ li a:hover {
 .gif {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+.gifbox {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  height: 600px;
+  align-items: stretch;
 }
 .container1 {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 1200px;
+  height: 400px;
   left: 0px;
-  top: 650px;
+  top: 80px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
 }
 .card1 {
-  position: absolute;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
   height: 400px;
-  left: 200px;
-  top: 20px;
-
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .card2 {
-  position: absolute;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
   height: 400px;
-  left: 800px;
-  top: 20px;
-
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .card3 {
-  position: absolute;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
   height: 400px;
-  left: 200px;
-  top: 450px;
-
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .card4 {
-  position: absolute;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
   height: 400px;
-  left: 800px;
-  top: 450px;
-
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 p {
-  color: white;
   font-family: poppins;
 }
