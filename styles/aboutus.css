@@ -100,11 +100,27 @@ li {
   font-family: "Metal Mania";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.6);
+  animation-name: test;
+  animation-duration: 10s;
+}
+@keyframes test {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
 }
 
-.unicycle-name-large {
+/* .unicycle-name-large {
   font-size: 8em;
-}
+} */
 
 .content-section {
   margin: 1em;
