@@ -3,7 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tamma+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <img class="logoimg" src="images/logo.jpeg" alt="logo" />
+      </div>
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <h1 class="unicycle-name">Unibike</h1>
+    </header>
+    <section class="contactsec">
+      <form class="form" autocomplete="off">
+        <label for="name" class="label">FULL NAME</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input-field"
+          placeholder="Enter your name"
+        />
+
+        <label for="email" class="label">EMAIL</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-field"
+          placeholder="Enter your email"
+          required
+          autofocus
+        />
+
+        <div class="select-wrapper">
+          <label for="select" class="label">MESSAGE REGARDING</label>
+          <i class="fas fa-caret-down select__icon"></i>
+          <select name="unibike" class="select" id="select">
+            <option value="Order">Order</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Quality">Quality</option>
+            <option value="Training">Training</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <label for="message" class="label">MESSAGE</label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="4"
+          placeholder="Enter your message"
+          class="textarea"
+        >
+        </textarea>
+        <button type="submit" class="button">SEND MESSAGE</button>
+      </form>
+      <div class="rectangle"></div>
+    </section>
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="unicycle-name">Unibike</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="/images/YouTube Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.Twitter.com" target="_blank">
+              <img src="/images/Twitter-logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="/images/Facebook Logo .png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

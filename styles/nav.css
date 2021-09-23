@@ -13,23 +13,33 @@
   font-family: Raleway;
   color: #777;
 }
-
-html,
 body {
   margin: 0;
-  padding: 0;
+  background-color: #3433e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*
+main {
+  height: 200vh;
+  width: 100%;
+  margin: 0px;
+}
+
 .logo {
   width: 120px;
-  height: 70px;
-  left: 10px;
-  top: 5px;
+  height: 100px;
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
 }
- */
-
+.logoimg {
+  width: 120px;
+  height: 100px;
+  align-items: center;
+}
 .nav ul {
   margin: 0;
 }
@@ -51,29 +61,43 @@ body {
   font-size: 1.1em;
   font-weight: lighter;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: filter 0.4s ease-in-out;
 }
 
 .nav a:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-radius: 3rem;
+  transform: scale(1.05);
+  will-change: transform;
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
 }
-
+.nav a:hover::after {
+  transform: translate(0, 0);
+}
 .main-header {
   background-color: rgba(0, 0, 0, 0.6);
   background-color: whitesmoke;
   background-blend-mode: multiply;
   background-size: cover;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .unicycle-name {
   text-align: center;
   margin: 0;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Metal Mania";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.6);
   animation-name: test;
-  animation-duration: 10s;
+  animation-duration: 5s;
+  padding-top: 5px;
 }
 @keyframes test {
   0% {
@@ -89,35 +113,8 @@ body {
     color: green;
   }
 }
-
-.content-section {
-  margin: 1em;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
-.section-header {
-  font-family: "Metal Mania";
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  font-size: 2.5em;
-}
-
-.about-unicycle-image {
-  float: left;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  border-radius: 50%;
-}
-
 .main-footer {
-  background-color: whitesmoke;
+  background-color: lightslategray;
   color: white;
   padding: 0.25em 0;
 }
