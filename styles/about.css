@@ -1,17 +1,20 @@
 .content-section {
   margin: 1em;
+  background-color: #3433e8;
 }
 
-.container {
+.main-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 9em auto;
   padding: 0 1.5em;
+  box-shadow: 0 0 8px 1px rgba(15, 28, 32, 0.5);
 }
 
-.section-header {
+.section-header h2 {
+  margin-top: 10px;
   font-family: "Metal Mania";
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff(0, 0, 0, 0.6);
   text-align: center;
   font-size: 2.5em;
 }
@@ -22,4 +25,9 @@
   width: 200px;
   margin: 15px;
   border-radius: 50%;
+}
+
+.about-main-container p {
+  margin-top: 20px;
+  font-size: 16px;
 }

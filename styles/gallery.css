@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Fonts/Booter\ -\ Zero\ Zero.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logoimg {
+  width: 120px;
+  height: 100px;
+  align-items: center;
+}
+
+.nav ul {
+  margin: 0;
+  position: sticky;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  font-family: Raleway;
+  display: inline-block;
+  padding: 0.5em;
+  color: black;
+  font-size: 16px;
+
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: filter 0.4s ease-in-out;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-radius: 3rem;
+  transform: scale(1.05);
+  will-change: transform;
+  transition: 0.2s;
+  transform: ease-out;
+  z-index: -1;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: whitesmoke;
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.gallery {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  gap: 30px;
+}
+.gallery div {
+  flex-direction: row;
+  margin: 0;
+  width: 400px;
+  height: 380px;
+  border: 3px solid grey;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
+.gallery div:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  box-shadow: 0 0 3px 1px rgba(15, 28, 32, 0.5);
+}
+
+.gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.unicycle-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #3433e8;
+  animation-name: test;
+  animation-duration: 10s;
+}
+@keyframes test {
+  0% {
+    color: #3433e8;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: #3433e8;
+  }
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.about-unicycle-image {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.main-footer {
+  background-color: lightslategray;
+  color: white;
+  padding: 0.25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 0.5em;
+}
+
+.footer-nav img {
+  width: 30px;
+  height: 30px;
+}

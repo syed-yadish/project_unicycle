@@ -15,7 +15,7 @@
 }
 body {
   margin: 0;
-  background-color: #3433e8;
+  background-color: rgb(250, 255, 248);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
