@@ -116,6 +116,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 80px;
 }
 
 .main-footer-container {
