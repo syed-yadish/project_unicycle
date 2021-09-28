@@ -4,8 +4,8 @@
 }
 
 .main-container {
-  max-width: 900px;
-  margin: 9em auto;
+  max-width: 800px;
+  margin: 12em auto;
   padding: 0 1.5em;
   box-shadow: 0 0 8px 1px rgba(15, 28, 32, 0.5);
 }
@@ -30,4 +30,6 @@
 .about-main-container p {
   margin-top: 20px;
   font-size: 16px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
 }
