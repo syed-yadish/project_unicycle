@@ -1,35 +1,100 @@
-.content-section {
-  margin: 1em;
-  background-color: #3433e8;
+body {
+  font-family: "proxima-nova", sans-serif;
 }
 
-.main-container {
+.container-fluid {
+  padding: 0;
+}
+
+.container {
   max-width: 800px;
-  margin: 12em auto;
-  padding: 0 1.5em;
-  box-shadow: 0 0 8px 1px rgba(15, 28, 32, 0.5);
 }
 
-.section-header h2 {
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4 {
+  margin: 0;
+  padding: 20px 0 10px 0;
+}
+
+.content-page .row {
+  padding: 30px 0 40px 0;
+}
+
+.content-page h2 {
+  color: #333333;
+  font-size: 30px;
+}
+.content-page p {
   margin-top: 10px;
-  font-family: "Metal Mania";
-  font-weight: normal;
-  color: #fff(0, 0, 0, 0.6);
-  text-align: center;
-  font-size: 2.5em;
+  color: #333333;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
-.about-unicycle-image {
-  float: left;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  border-radius: 50%;
+.content-page a {
+  color: #000;
+  font-weight: 600;
 }
 
-.about-main-container p {
-  margin-top: 20px;
-  font-size: 16px;
+.content-page .hero {
+  height: 450px;
+  background-image: url("../images/Extreme-1.jpg"); /*url("/images/headers/header-background.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-page .hero h1 {
   color: #fff;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 48px;
+}
+.content-page .hero p {
+  color: #3433e8;
+  font-family: "proxima-nova";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.stats {
+  background: #f0f0f0;
+}
+
+.stats .stats-value {
+  font-size: 60px;
+  display: block;
+  text-align: center;
+}
+.stats .stats-label {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.text-uppercase {
+  margin-bottom: 100px;
+  width: 11.5ch;
+  animation: typing 2s steps(21), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "proxima-nova";
+  font-size: 16px;
+  color: #3433e8;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
