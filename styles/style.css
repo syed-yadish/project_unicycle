@@ -9,7 +9,7 @@
   display: flex;
   height: 460px;
   align-items: stretch;
-  top: 105px;
+  top: 98px;
   display: flex;
   justify-content: center;
   background-color: whitesmoke;
@@ -64,35 +64,68 @@
 }
 p {
   font-family: poppins;
+  color: black;
 }
 .container2 {
   position: relative;
-  width: 100%;
-  padding-top: 5px;
-  padding-left: 300px;
-  padding-right: 300px;
+  width: 60%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: justify;
   align-items: center;
   justify-content: space-evenly;
   background-color: whitesmoke;
 }
 .container3 {
   position: relative;
-  width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: justify;
   align-items: center;
   justify-content: space-evenly;
-  text-justify: auto;
   background-color: whitesmoke;
 }
 .img2 {
   padding-top: 20px;
   width: 60%;
   height: auto;
+}
+.todohead {
+  font-family: "proxima-nova";
+  font-weight: bold;
+  font-size: 32px;
+  color: blue;
+}
+.nottodo {
+  box-shadow: 4px 4px 12px #000000;
+  width: 80%;
+  height: 230vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  grid-gap: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.todo {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border: 4px solid white;
+  border-color: white;
+}
+.todo:hover {
+  border-color: gray;
+}
+h4 {
+  color: #000000;
 }

@@ -35,7 +35,6 @@ body {
   width: 120px;
   height: 100px;
   align-items: center;
-  padding-top: 3px;
 }
 .nav ul {
   margin: 0;
@@ -79,7 +78,6 @@ body {
   background-color: lightslategray;
   background-blend-mode: multiply;
   background-size: cover;
-  padding-bottom: 0px;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -94,7 +92,6 @@ body {
   color: rgba(0, 0, 0, 0.6);
   animation-name: test;
   animation-duration: 5s;
-  padding-top: 5px;
 }
 @keyframes test {
   0% {
