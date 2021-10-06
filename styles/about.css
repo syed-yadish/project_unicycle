@@ -53,10 +53,11 @@ body {
   font-size: 48px;
 }
 .content-page .hero p {
-  color: #3433e8;
+  background-color: #3433e8;
   font-family: "proxima-nova";
   font-weight: bold;
   font-size: 24px;
+  /* opacity: 0.6  ; */
 }
 
 .stats {
@@ -84,7 +85,7 @@ body {
   font-size: 16px;
   color: #3433e8;
   border-radius: 5px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 @keyframes typing {
